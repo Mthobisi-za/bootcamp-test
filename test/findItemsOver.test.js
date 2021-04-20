@@ -13,13 +13,13 @@ var itemListss = [
     {"name":"apples","qty":37}
     ];
 describe('findItemsOver', () => {
-    it('return products that are more than 20', () => {
-        assert.deepEqual(findItemsOver(itemLists, 20), [{"name":"apples","qty":40},{"name":"bananas","qty":23},{"name":"apples","qty":37}], "The function should return products that have quantity higher than the threshold");
+    it('should return products that are more than 20', () => {
+        assert.equal(findItemsOver(itemLists, 20), [{"name":"apples","qty":40},{"name":"bananas","qty":23},{"name":"apples","qty":37}], "The function should return products that have quantity higher than the threshold");
     });
-    it('return products that are more than 10', () => {
-        assert.deepEqual(findItemsOver(itemLists, 10), [{"name":"apples","qty":40},{"name":"bananas","qty":23},{"name":"apples","qty":37}], "The function should return products that have quantity higher than the threshold");
+    it('should return products that are more than 10', () => {
+        assert.equal(findItemsOver(itemLists, 10), [{"name":"apples","qty":40},{"name":"bananas","qty":23},{"name":"apples","qty":37}], "The function should return products that have quantity higher than the threshold");
     });
-    it('return products that are more than 30', () => {
-        assert.deepEqual(findItemsOver(itemListss, 30), [{"name":"apples","qty":40},{"name":"apples","qty":37}], "The function should return products that have quantity higher than the threshold");
+    it('should return products that are more than 30', () => {
+        assert.equal(findItemsOver(itemListss, 30), [{"name":"apples","qty":40},{"name":"apples","qty":37}], "The function should return products that have quantity higher than the threshold");
     });
 });

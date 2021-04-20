@@ -1,9 +1,9 @@
 
 describe("isFromBellville",()=>{
-    it("Return True.", ()=>{
-        assert.deepEqual(isFromBellville("CY 123"), true, "The test must return true");;
+    it("should Return True for CY registration.", ()=>{
+        assert.equal(isFromBellville("CY 123"), true, "The test must return true");;
     });
-    it("Return false", ()=>{
-        assert.deepEqual(isFromBellville("Cj 123"), false, "The test must return true");;
+    it("should Return false for CJ registration", ()=>{
+        assert.equal(isFromBellville("Cj 123"), false, "The test must return true");;
     });
 });

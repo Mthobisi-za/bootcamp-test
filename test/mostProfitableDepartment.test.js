@@ -51,14 +51,14 @@ var data2 = [
     {department: 'carpentry', sales: 16109, day: 'Friday'}
 ];
 describe('mostProfitableDepartment', () => {
-    it("return outdoor ", ()=>{
-        assert.deepEqual(mostProfitableDepartment(data), "outdoor", "Suppose to return outdoor");
+    it("should return outdoor ", ()=>{
+        assert.equal(mostProfitableDepartment(data), "outdoor", "Suppose to return outdoor");
     });
-    it("return carpentry",()=>{
-        assert.deepEqual(mostProfitableDepartment(data1), "carpentry", "must return carpentry");
+    it("should return carpentry",()=>{
+        assert.equal(mostProfitableDepartment(data1), "carpentry", "must return carpentry");
     });
-    it("return hardware",()=>{
-        assert.deepEqual(mostProfitableDepartment(data2), "hardware", "must return hardware");
+    it("should return hardware",()=>{
+        assert.equal(mostProfitableDepartment(data2), "hardware", "must return hardware");
     });
 });
 
