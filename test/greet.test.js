@@ -1,6 +1,4 @@
 
-
-
 describe("Greet", ()=>{
     it("The function should be able to greet Jane", ()=>{
         assert.equal(greet("Jane"), "Hello, Jane", " return Hello Jane");  
